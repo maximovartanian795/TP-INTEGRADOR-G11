@@ -11,4 +11,6 @@ Componentes usados y pines: Arduino Mega, protoboard (5V y GND), tres potencióm
 Cómo funciona la comunicación (Arduino ↔ Python): Unidireccional por puerto serie usando pyserial; el Arduino mapea cada potenciómetro del 0 al 9 cuando queda quieto 0,5 segundos y manda esos valores a Python, mientras que Python no le manda nada al Arduino y maneja todo en la ventana de Tkinter.
 
 
-Cómo ejecutarlo: Instalar pyserial, cargar el .ino en el Arduino Mega desde el Arduino IDE (cerrando el Monitor Serie antes de correr Python) y ejecutar el script .py. Cambios respecto al anteproyecto y por qué: Botón "Acceder" en Tkinter en vez de pulsador físico (más dinámico), clave fija predefinida en vez de aleatoria, sin LEDs verde y rojo (redundantes con la interfaz), y sí se hicieron los 3 intentos, el bloqueo de 30 segundos y la estabilización de 0,5 s.
+Cómo ejecutarlo: Instalar pyserial, cargar el .ino en el Arduino Mega desde el Arduino IDE (cerrando el Monitor Serie antes de correr Python) y ejecutar el script .py. 
+
+Cambios respecto al anteproyecto y por qué: Botón "Acceder" en Tkinter en vez de pulsador físico (más dinámico), clave fija predefinida en vez de aleatoria, sin LEDs verde y rojo (redundantes con la interfaz), y sí se hicieron los 3 intentos, el bloqueo de 30 segundos y la estabilización de 0,5 s.
